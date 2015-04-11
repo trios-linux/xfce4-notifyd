@@ -1,0 +1,26 @@
+Source: xfce4-notifyd
+Section: xfce
+Priority: optional
+Maintainer: Filip Danilovic <filip@openmailbox.org>
+Build-Depends: debhelper (>= 9), intltool, dpkg-dev (>= 1.16.1),
+ libxfce4ui-1-dev, libxfce4util-dev (>= 4.8.0), libdbus-1-dev,
+ libdbus-glib-1-dev, exo-utils, libxfconf-0-dev (>= 4.8.0),
+ libnotify-dev (>= 0.7.0), dh-autoreconf, xfce4-dev-tools
+Standards-Version: 3.9.6
+Homepage: http://goodies.xfce.org/projects/applications/xfce4-notifyd
+Vcs-Svn: svn://anonscm.debian.org/pkg-xfce/goodies/trunk/xfce4-notifyd/
+Vcs-Browser: http://anonscm.debian.org/viewvc/pkg-xfce/goodies/trunk/xfce4-notifyd/
+
+Package: xfce4-notifyd
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Provides: notification-daemon
+Recommends: libnotify-bin
+Description: simple, visually-appealing notification daemon for Xfce
+ Xfce4-notifyd is a simple, visually-appealing notification daemon for Xfce
+ that implements the Freedesktop.org Desktop Notifications Specification.
+ .
+ Features:
+  * Themable using the GTK+ theming mechanism
+  * Visually appealing: rounded corners, shaped windows
+  * Supports transparency and fade effects

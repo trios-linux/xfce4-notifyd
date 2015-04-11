@@ -1,0 +1,17 @@
+Description: Add XfceNotifyWindow::summary-bold option in one of the example themes
+Author: Daniel Echeverry <epsilon77@gmail.com>
+Bug-Debian: http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=687441
+Origin: vendor
+Last-Update: 2012-09-13
+Index: xfce4-notifyd/themes/Smoke/gtkrc
+===================================================================
+--- xfce4-notifyd.orig/themes/Smoke/gtkrc	2013-08-19 19:10:39.493154937 +1000
++++ xfce4-notifyd/themes/Smoke/gtkrc	2013-08-19 19:10:39.489154907 +1000
+@@ -4,6 +4,7 @@
+     XfceNotifyWindow::border-color = "#ffffff"
+     XfceNotifyWindow::border-radius = 10.0
+     XfceNotifyWindow::border-width-hover = 3.0
++    XfceNotifyWindow::summary-bold = 1
+ }
+ class "XfceNotifyWindow" style "smoke-window"
+ 
